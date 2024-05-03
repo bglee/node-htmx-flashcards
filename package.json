@@ -7,17 +7,28 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "start": "npx ts-node src/index.ts",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon --watch src --watch public/styles --ext ts,tsx,js,jsx,css --exec 'npm run tailwind:css && ts-node src/index.ts'",
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "@aws-sdk/client-dynamodb": "^3.567.0",
+    "@aws-sdk/lib-dynamodb": "^3.567.0",
+    "autoprefixer": "^10.4.19",
+    "aws-sdk": "^2.1611.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsxte": "^3.3.1",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.7",
+    "daisyui": "^4.10.5",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
