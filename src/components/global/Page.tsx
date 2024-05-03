@@ -8,7 +8,9 @@ export const Page: JSXTE.Component = ({ children }) => {
       </head>
       <body>
         <Navbar />
-        <div>{children}</div>
+        <div class="pt-3" id="content">
+          {children}
+        </div>
       </body>
     </html>
   );

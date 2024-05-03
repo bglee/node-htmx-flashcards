@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
-    "start": "npx ts-node src/index.ts",
-    "dev": "nodemon --watch src --watch public/styles --ext ts,tsx,js,jsx,css --exec 'npm run tailwind:css && ts-node src/index.ts'",
+    "start": "npx ts-node src/app.ts",
+    "dev": "nodemon --watch src --watch public/styles --ext ts,tsx,js,jsx,css --exec 'npm run tailwind:css && ts-node src/app.ts'",
     "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
   },
   "keywords": [],

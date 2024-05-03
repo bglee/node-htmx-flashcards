@@ -1096,16 +1096,23 @@ html {
 .justify-center {
   justify-content: center;
 }
-.bg-primary {
+.bg-neutral {
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-p,oklch(var(--p)/var(--tw-bg-opacity)));
+  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
 }
 .p-2 {
   padding: 0.5rem;
 }
+.pt-3 {
+  padding-top: 0.75rem;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-primary {
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
 }
 .text-white {
   --tw-text-opacity: 1;

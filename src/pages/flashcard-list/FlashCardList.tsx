@@ -4,6 +4,8 @@ import { FlashCardListItem } from "./FlashcardListItem";
 
 type FlashCardListProps = {
   cardList: Array<FlashCard>;
+  editCardId?: string;
+  deleteCardId?: string;
 };
 
 export const FlashCardList: JSXTE.Component<FlashCardListProps> = ({
