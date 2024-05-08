@@ -39,7 +39,19 @@ export const FlashCardForm: JSXTE.Component<FlashCardFormProps> = ({
             value={flashCard ? flashCard.answer : ""}
           />
         </div>
-        <button class="btn btn-primary" type="submit">
+        <button
+          class="btn btn-secondary m-2"
+          type="button"
+          hx-get="/manage/flash-cards"
+          hx-select={
+            flashCard ? `#view-${flashCard.card_id}` : "#create-card-button"
+          }
+          hx-swap="outerHTML"
+          hx-target={flashCard ? `#edit-${flashCard.card_id}` : "#new-card"}
+        >
+          Cancel
+        </button>
+        <button class="btn btn-primary m-2" type="submit">
           Save
         </button>
       </form>

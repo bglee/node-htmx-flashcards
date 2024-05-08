@@ -40,6 +40,7 @@ export const FlashCardList: JSXTE.Component<FlashCardListProps> = ({
               hx-get="/manage/flash-cards/create"
               hx-replace-url="true"
               hx-swap="outerHTML"
+              hx-indicator="#loading"
             >
               Create New Flashcard
             </button>

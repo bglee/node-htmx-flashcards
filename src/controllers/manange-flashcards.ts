@@ -49,11 +49,9 @@ export const getCreateFlashCard = async (req: Request, res: Response) => {
 
 // GET /flash-cards/:id/edit
 export const getEditFlashCard = async (req: Request, res: Response) => {
-  if (req.headers["HX-Request"]) {
+  if (req.headers["hx-request"]) {
     const flashCard = await Repo.getFlashCard(req.params.id);
-    res.send(
-      renderToHtml(createElement(FlashCardListItem, { flashCard, edit: true })),
-    );
+    res.send(renderToHtml(createElement(FlashCardForm, { flashCard })));
   } else {
     res.send(renderFlashCardListPage({ editCardId: req.params.id }));
   }
