@@ -8,7 +8,9 @@
     "build": "npx tsc",
     "start": "npx ts-node src/app.ts",
     "dev": "nodemon --watch src --watch public/styles --ext ts,tsx,js,jsx,css --exec 'npm run tailwind:css && ts-node src/app.ts'",
-    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
+    "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css",
+    "htmx:js": "wget https://unpkg.com/htmx.org@1.9.12/dist/htmx.min.js -O public/js/htmx.min.js",
+    "alpine:js": "wget https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js -O public/js/apline.min.js"
   },
   "keywords": [],
   "author": "",
@@ -23,11 +25,13 @@
     "jsxte": "^3.3.1",
     "postcss": "^8.4.38",
     "postcss-cli": "^11.0.0",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "uuid-with-v6": "^2.0.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.12.7",
+    "@types/uuid-with-v6": "^1.1.2",
     "daisyui": "^4.10.5",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",

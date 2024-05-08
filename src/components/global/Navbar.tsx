@@ -7,7 +7,7 @@ export const Navbar: JSXTE.Component = () => {
       <a href="/flashcard-session" class="btn btn-ghost text-xl text-primary">
         Flashcard Session
       </a>
-      <a href="/manage" class="btn btn-ghost text-xl text-primary">
+      <a href="/manage/flash-cards" class="btn btn-ghost text-xl text-primary">
         Manage
       </a>
     </div>

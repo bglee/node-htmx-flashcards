@@ -1,4 +1,4 @@
-# Express with HTMX Example
+# Node.js Express with HTMX Example
 
 This is a simple example of using [Express](https://expressjs.com/) with [HTMX](https://htmx.org/) to create a dynamic web application.
 
@@ -8,11 +8,13 @@ I am building this off the utility application that I have already started for m
 
 ## Full Stack
 
-- DynamoDB (AWS)
-- Express (Node.js)
+- DynamoDB (Database)
+- Node.js Express (Server)
 - Typescript (Code)
 - HTMX (Frontend)
 - JSXTE (Templating)
 - Alpine.js (Reactivity)
 - TailwindCSS (Styling)
 - DaisyUI (Components)
+
+## Project Tree
